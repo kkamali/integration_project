@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja?!</title>
+    </head>
+    <body>
+        {% load staticfiles %}
+        {% if ninja == 'blue'%}
+            <img src="{% static 'disappearingninjas/leonardo.jpeg' %}" alt="ninja" />
+        {% elif ninja == 'purple'%}
+            <img src="{% static 'disappearingninjas/donatello.gif' %}" alt="ninja" />
+        {% elif ninja == 'red'%}
+            <img src="{% static 'disappearingninjas/raphael.jpg' %}" alt="ninja" />
+        {% elif ninja == 'orange'%}
+            <img src="{% static 'disappearingninjas/michaelangelo.gif' %}" alt="ninja" />
+        {% elif ninja == ''%}
+            <img src="{% static 'disappearingninjas/TMNT.jpg' %}" alt="ninja" />
+        {% else %}
+            <img src="{% static 'disappearingninjas/april.jpg' %}" alt="ninja" />
+        {% endif %}
+    </body>
+</html>
